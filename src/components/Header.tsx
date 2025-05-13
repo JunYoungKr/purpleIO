@@ -4,20 +4,13 @@ import Link from "next/link";
 const Header = () => {
   return (
     <header
-      style={{
-        height: "80px",
-        padding: "0 24px",
-        borderBottom: "1px solid #111",
-      }}
-      className="flex justify-between items-center px-6 py-4 border-b"
+      className="flex justify-between items-center h-[60px] md:h-[80px]"
+      style={{ fontFamily: "pretendard", padding: "24px" }}
     >
-      <h1
-        style={{ color: "#111", fontFamily: "pretendard", fontSize: "24px" }}
-        className="text-xl font-bold "
-      >
+      <h1 className="text-lg md:text-2xl font-bold text-[#111]">
         AWESOME FOOD STORE
       </h1>
-      <nav className="space-x-4 flex flex-row gap-[10px] text-[#111] underline underline-offset-4">
+      <nav className="flex gap-4 text-[#111] underline underline-offset-4 text-sm md:text-base">
         <Link href="/about">ABOUT</Link>
         <Link href="/">STORE</Link>
       </nav>
