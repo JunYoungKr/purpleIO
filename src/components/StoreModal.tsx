@@ -12,7 +12,7 @@ const StoreModal = () => {
 
   return (
     <Dialog open={open} onOpenChange={close}>
-      <DialogContent className="bg-white p-0 overflow-hidden sm:max-w-[900px]">
+      <DialogContent className="bg-white p-0 sm:max-w-[900px]">
         <motion.div
           initial={{ scale: 0.95, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
@@ -21,7 +21,7 @@ const StoreModal = () => {
         >
           <div className="flex flex-col md:flex-row h-full">
             {/* 이미지 영역 */}
-            <div className="relative w-full md:w-1/2 h-[300px] md:h-auto">
+            <div className="relative w-full md:w-1/2 h-[200px] md:h-auto">
               <Image
                 src={selectedStore.image}
                 alt={selectedStore.name}
@@ -32,9 +32,9 @@ const StoreModal = () => {
 
             {/* 텍스트 영역 */}
             <div
-              className="w-full md:w-1/2 p-6 space-y-4 overflow-y-auto"
+              className="w-full md:w-1/2 p-6 space-y-4"
               style={{
-                padding: "24px",
+                padding: "12px",
                 display: "flex",
                 flexDirection: "column",
                 justifyContent: "space-around",
@@ -48,7 +48,7 @@ const StoreModal = () => {
               </h2>
               <p
                 className="text-sm text-gray-800 whitespace-pre-line leading-relaxed"
-                style={{ fontFamily: "pretendard" }}
+                style={{ fontFamily: "pretendard", marginTop: "6px" }}
               >
                 {selectedStore.description}
               </p>
