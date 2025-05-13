@@ -17,7 +17,7 @@ const Header = () => {
       >
         AWESOME FOOD STORE
       </h1>
-      <nav className="space-x-4">
+      <nav className="space-x-4 flex flex-row gap-[10px] text-[#111] underline underline-offset-4">
         <Link href="/about">ABOUT</Link>
         <Link href="/">STORE</Link>
       </nav>
