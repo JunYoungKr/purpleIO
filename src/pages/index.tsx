@@ -5,6 +5,7 @@ import StoreList from "@/components/StoreList";
 import StoreModal from "@/components/StoreModal";
 import { Store } from "@/types";
 import { getStores } from "@/lib/api";
+import "@/styles/globals.css";
 
 const Home = () => {
   const [stores, setStores] = useState<Store[]>([]);
